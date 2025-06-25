@@ -1,0 +1,54 @@
+FLUJO PROFESIONAL DE TRABAJO ENTRE MACBOOK Y DELL – PROYECTO AUTOMATIZACIÓN
+Autor: J. Livramento
+Repositorio: https://github.com/javilivra/ProjectAutomateSJL
+
+-------------------------------------------------
+I. FLUJO DE TRABAJO DESDE MACBOOK HACIA DELL
+-------------------------------------------------
+
+1. Editar el código VBA en Visual Studio Code (archivo .bas dentro de /macros)
+2. Guardar los cambios y hacer commit + push desde MacBook:
+
+   git add macros/mod_InstrumentacionAutomatica.bas
+   git commit -m "Cambios realizados desde MacBook"
+   git push
+
+3. Desde la DELL (sin Git instalado):
+   - Ingresar a: https://github.com/javilivra/ProjectAutomateSJL
+   - Navegar a la carpeta /macros/
+   - Hacer clic en el archivo .bas y luego en el botón "Raw"
+   - Guardar la página como archivo: "Guardar como..." → .bas
+
+4. En Excel (DELL):
+   - Abrir el editor VBA (Alt + F11)
+   - Menú "Archivo > Importar archivo..."
+   - Seleccionar el archivo .bas descargado
+
+-------------------------------------------------
+II. FLUJO DE TRABAJO DESDE DELL HACIA MACBOOK
+-------------------------------------------------
+
+1. Modificar la macro en Excel (Editor VBA)
+2. Exportar el módulo actualizado:
+
+   - En el Editor VBA: "Archivo > Exportar archivo..."
+   - Guardar como: mod_InstrumentacionAutomatica.bas
+
+3. Transferir el archivo a la MacBook:
+   - Vía correo, Google Drive, OneDrive o pendrive
+
+4. En la MacBook:
+   - Reemplazar el archivo en la carpeta /macros/
+   - Desde Visual Studio Code:
+
+     git add macros/mod_InstrumentacionAutomatica.bas
+     git commit -m "Mejoras realizadas desde Dell"
+     git push
+
+-------------------------------------------------
+Notas:
+- Evitar usar nombres con ñ, tildes o espacios
+- Mantener una única versión del archivo para evitar conflictos
+- Siempre hacer push desde la MacBook (única con Git instalado)
+- Verificar desde GitHub online que los cambios estén subidos
+
