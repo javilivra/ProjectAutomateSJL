@@ -18,7 +18,7 @@ Sub ExtraerAtributosBloqueInstrumentos()
     Dim hojaNotasRef As Worksheet
 
     ' === VARIABLES DE CONTROL Y PROCESO ===
-    Dim valorFuncion As String
+    Dim valorFunction As String
     Dim valorTag As String
     Dim filaExcel As Long
     Dim tagTracking As Object
@@ -46,7 +46,7 @@ Sub ExtraerAtributosBloqueInstrumentos()
 
 Set wb = ActiveWorkbook
 Set hojaLI = wb.Worksheets("LI")
-Set hojaCar = wb.Worksheets("Car�tula")
+Set hojaCar = wb.Worksheets("Carátula")
 Set hojaNotasRef = wb.Worksheets("Notas - Referencias")
 
 rutaDocs = Application.GetOpenFilename("Excel Files (*.xlsx), *.xlsx", , "Selecciona LISTA DE DOCUMENTOS")

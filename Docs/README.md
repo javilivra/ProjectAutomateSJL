@@ -20,11 +20,12 @@ Desarrollar macros y herramientas de automatización aplicadas a entornos técni
 
 ```bash
 ProjectAutomateSJL/
-├── macros/           # Módulos .bas con código VBA versionado
+├── Macros/           # Módulos .bas con código VBA versionado
 ├── excel/            # Plantillas de trabajo en Excel (próximamente)
 ├── autocad/          # Archivos DWG y recursos de prueba (próximamente)
-├── docs/             # Documentación técnica y flujos de trabajo
+├── Docs/             # Documentación técnica y flujos de trabajo
 └── README.md         # Este archivo (manual del usuario - versión preliminar)
+```
 ---
 
 ## 📖 Contenido del manual del usuario (en desarrollo)
@@ -43,7 +44,7 @@ Este README funcionará como manual oficial para el uso de las automatizaciones 
    - Ubicación de archivos en la PC
 5. 🧠 Descripción de funciones y rutinas
    - ExtraerAtributosBloqueInstrumentos()
-   - CompletarCamposAutomaticos()
+   - CompletarSenalesYUnidades()
 6. 🧪 Ejecución de la macro paso a paso
    - Qué hojas necesita
    - Qué archivos DWG debe tener cargados
@@ -54,4 +55,13 @@ Este README funcionará como manual oficial para el uso de las automatizaciones 
 10. 📬 Contacto o contribución (si aplica en algún momento)
 
 > ⚠️ Este índice se completará cuando se cierre la primera versión operativa y estable.
+
+
+### ✅ Ejecución de pruebas
+
+Para correr las pruebas automáticas ejecuta:
+
+```bash
+python -m unittest discover -s tests
+```
 
